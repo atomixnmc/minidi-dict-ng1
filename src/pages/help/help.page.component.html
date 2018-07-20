@@ -1,0 +1,70 @@
+<div id='tab-intro'>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 col-xxs-hidden">
+                <h3>
+            Hướng dẫn
+          </h3>
+            </div>
+            <div class="col-xs-8">
+                <div class="input-group">
+                    <div class="input-group-btn search-panel">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept">Chủ đề</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#en_vi">Cách sử dụng</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control" id="search-word" placeholder="Nhập từ...">
+                    <span class="input-group-btn">
+                    <button id="btn-search" class="btn btn-default" type="button">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-xxs-hidden" style="height:500px;">
+                <div style="height: 100%; overflow: scroll">
+                    <ul id="word-list" class="word-list" style="display: none">
+                        <li>A</li>
+                        <li>B</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10" id="result-cont">
+                <div class="panel-group" style="border: none" id="result-notfound-panel">
+                    <p>
+                        <h5>
+                  Mời bạn nhập từ cần tìm. <i>Không có từ này!</i>
+              </h5>
+                    </p>
+                </div>
+                <div class="panel-group" style="border: none" id="result-found-panel">
+                    <div class="panel panel-default" style="border: none">
+                        <div style="border-top: 1px solid grey; border-bottom: 1px solid grey">
+                            <h4 class="panel-title" style="height: 60px; line-height: 60px; ">
+                             <div data-toggle="collapse" id="result-word" style="width: 50%; float: left">
+                            </div> 
+                            <div id="pronunciation" style="width: 50%; float: right">
+                              <i class="glyphicon glyphicon-volume-up" id="sound"></i>
+                              <span id="transcription" style="font-style: italic;"></span>
+                            </div>
+                        </h4>
+                            <!--<span class="glyphicon glyphicon-chevron-down"></span>-->
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
