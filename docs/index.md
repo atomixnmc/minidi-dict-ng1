@@ -1,9 +1,9 @@
 About
 =====
 
-MDwiki is a CMS/Wiki __completely built in HTML5/Javascript and runs 100% on the client__. No special software installation or server side processing is required. Just upload the `mdwiki.html` shipped with MDwiki into the same directory as your markdown files and you are good to go!
+Minidi is a CMS/Wiki __completely built in HTML5/Javascript and runs 100% on the client__. No special software installation or server side processing is required. Just upload the `mdwiki.html` shipped with Minidi into the same directory as your markdown files and you are good to go!
 
-Note: The website you are currently viewing is realized with MDwiki and hosted on [GitHub pages](http://pages.github.com/). [http://mdwiki.info](http://mdwiki.info) redirects here.
+Note: The website you are currently viewing is realized with Minidi and hosted on [GitHub pages](http://pages.github.com/). [http://mdwiki.info](http://mdwiki.info) redirects here.
 
 [gimmick:twitterfollow](timodoerr)
 
@@ -35,7 +35,7 @@ If you rename the `mdwiki.html` into `index.html`, you can omit the filename on 
 
     http://www.example.com/#!myfile.md
 
-MDwiki will load a file called `index.md` from the same directory as the index.html by default, so if you use an `index.md` file as entry point, all you have to do is enter your domain name:
+Minidi will load a file called `index.md` from the same directory as the index.html by default, so if you use an `index.md` file as entry point, all you have to do is enter your domain name:
 
     http://example.com/
 
@@ -46,7 +46,7 @@ Note: There are lots more features over regular Markdown, check out the [quickst
 Credits / Technologies
 ----------------------
 
-MDwiki would not exist if it weren't for those great pieces of software:
+Minidi would not exist if it weren't for those great pieces of software:
 
   * [marked][marked]
   * [jQuery][jQuery]
@@ -55,7 +55,7 @@ MDwiki would not exist if it weren't for those great pieces of software:
   * [colorbox][colorbox]
   * [highlightjs][highlightjs]
 
-MDwiki is created by Timo Dörr. Follow me to get updates on MDwiki! [Follow @timodoerr](http://www.twitter.com/timodoerr).
+Minidi is created by Timo Dörr. Follow me to get updates on Minidi! [Follow @timodoerr](http://www.twitter.com/timodoerr).
 
 Cute kitten images provided by the great [placekitten.com] service.
 
@@ -77,6 +77,6 @@ Cute kitten images provided by the great [placekitten.com] service.
 License
 -------
 
-MDwiki is licensed under [GNU GPLv3 with additional terms applied][license].
+Minidi is licensed under [GNU GPLv3 with additional terms applied][license].
 
   [license]: https://github.com/Dynalon/mdwiki/blob/master/LICENSE.txt

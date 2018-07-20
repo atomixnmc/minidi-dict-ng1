@@ -1,4 +1,4 @@
-# MDwiki
+# Minidi
 
 [About](index.md)
 
@@ -19,7 +19,7 @@
   - - - -
   * [Hosting with GitHub](tutorials/github.md)
   * [Use with Dropbox](tutorials/dropbox.md)
-  * [Set up MDwiki on IIS](tutorials/iis/iis.md)
+  * [Set up Minidi on IIS](tutorials/iis/iis.md)
 
 [Examples](examples.md)
 [Download](download.md)
@@ -40,8 +40,8 @@
 $(document).ready(function() {
   $.md.stage('all_ready').subscribe(function (done) {
     var warning="";
-    warning+="ATTENTION: This is the unstable MDwiki website. For documentation of the latest stable ";
-    warning+="MDwiki please see <a href='http://www.mdwiki.info'>the stable documentation.</a>";
+    warning+="ATTENTION: This is the unstable Minidi website. For documentation of the latest stable ";
+    warning+="Minidi please see <a href='http://www.mdwiki.info'>the stable documentation.</a>";
 
     $('#md-content').prepend($('<div class="alert alert-danger">' + warning + '</div>'));
     done();

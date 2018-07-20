@@ -7,7 +7,7 @@ About
 ------
 
 
-This tutorial describes how to setup a public website using MDwiki  which is hosted through [GitHub][GitHub]. GitHub is a perfect choice for hosting, and the MDwiki project website located at <http://www.mdwiki.info> is also hosted on GitHub.
+This tutorial describes how to setup a public website using Minidi  which is hosted through [GitHub][GitHub]. GitHub is a perfect choice for hosting, and the Minidi project website located at <http://www.mdwiki.info> is also hosted on GitHub.
 
 [![Github logo](githublogo.png)](http://www.github.com)
 
@@ -30,11 +30,11 @@ You can sign up with GitHub at <http://www.github.com/signup>.
 
 ### Step 2: Fork mdwiki-seed
 
-We have set up a [minimal example MDwiki installation](https://github.com/Dynalon/mdwiki-seed) that you can use as a starting point. Included is the latest MDwiki release and some example Markdown that is easy to understand.  Follow the link and click the "fork" button to get your own copy.
+We have set up a [minimal example Minidi installation](https://github.com/Dynalon/mdwiki-seed) that you can use as a starting point. Included is the latest Minidi release and some example Markdown that is easy to understand.  Follow the link and click the "fork" button to get your own copy.
 
 Now you should be able to see an index page at http://username.github.io/mymdwiki/mdwiki.html#!index.md, where username is your Github account name.  It may take up to ten minutes for this to be available.
 
-### Step 3: Edit your forked version of MDwiki seed
+### Step 3: Edit your forked version of Minidi seed
 Clone your fork and make some changes.  For instance, you may wish to
 
     git mv mdwiki.html index.html

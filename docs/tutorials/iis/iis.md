@@ -1,17 +1,17 @@
-Set up MDwiki on IIS Server
+Set up Minidi on IIS Server
 ===================
 
 About
 ------
 
-This walkthrough will describe how to setup MDwiki and get it running on [IIS](http://iis.com).  We also assume you have a fresh windows server setup with IIS installed.
+This walkthrough will describe how to setup Minidi and get it running on [IIS](http://iis.com).  We also assume you have a fresh windows server setup with IIS installed.
 
 Instructions
 -------------
 
-### Get MDwiki
+### Get Minidi
 
-Obtain MDwiki from http://mdwiki.info, you can either fork and build your own, or download the precompiled release.
+Obtain Minidi from http://mdwiki.info, you can either fork and build your own, or download the precompiled release.
 
 The precompiled release comes with a couple different version of mdwiki.html file, feel free to use whatever one you want, but for this walkthrough we'll be using the ``mdwiki.html``.
 
@@ -28,7 +28,7 @@ For this demo we'll use this code
 **index.md**
 
 ```
-My MDwiki Website
+My Minidi Website
 ----------------
 
 ###Hello World!
@@ -68,7 +68,7 @@ In the Add MIME type dialog give the file extension ``.md``, with a MIME type of
 
 ![MIME Type Dialog](images/mime-type-dialog.png)
 
-After clicking the OK button IIS will now know how to serve markdown files to MDwiki. 
+After clicking the OK button IIS will now know how to serve markdown files to Minidi. 
 
 Navigate to your site to see it up and running.
 

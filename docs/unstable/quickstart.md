@@ -1,7 +1,7 @@
 Quick Start
 ===========
 
-Note: If you are already familiar with Markdown, you might want to look at [the source of this wiki][src], which is itself created with MDwiki.
+Note: If you are already familiar with Markdown, you might want to look at [the source of this wiki][src], which is itself created with Minidi.
 
   [src]: https://github.com/Dynalon/mdwiki/tree/gh-pages
 
@@ -29,7 +29,7 @@ SubHeading
 
 ```
 
-MDwiki uses the [GitHub flavored markdown dialect][gfm], so you can i.e. add tables:
+Minidi uses the [GitHub flavored markdown dialect][gfm], so you can i.e. add tables:
 
     | Tables        | Are           | Cool  |
     | ------------- |:-------------:| -----:|
@@ -55,7 +55,7 @@ All you have to do is upload your markdown files with an `.md` file extension to
 
     http://example.com/mdwiki.html#!myfile.md
 
-It is advised that you create an `index.md` file which serves as a starting point for your wiki when no parameter is given - in this case MDwiki will automatically fetch and display the `index.md`. If you also rename the `mdwiki.html` file into `index.html`, there are no parameters required and you can access your wiki at `http://example.com/`!
+It is advised that you create an `index.md` file which serves as a starting point for your wiki when no parameter is given - in this case Minidi will automatically fetch and display the `index.md`. If you also rename the `mdwiki.html` file into `index.html`, there are no parameters required and you can access your wiki at `http://example.com/`!
 
 - - - -
 
@@ -119,7 +119,7 @@ Internal links will be prefix automatically with the `#!` hashbang:
 Images
 -------
 
-Images are regularly placed as in standard markdown using the `![alt](href "title")` notation. MDwiki will create a nice highlight-like popup if you click an image. You can group images together by __not__ putting an empty line in between them.
+Images are regularly placed as in standard markdown using the `![alt](href "title")` notation. Minidi will create a nice highlight-like popup if you click an image. You can group images together by __not__ putting an empty line in between them.
 
 Example:
 
@@ -159,7 +159,7 @@ To use an image as a link, use the following syntax:
 Syntax highlighting
 -------------------
 
-MDwiki supports [GFM][gfm] like syntax highlighting. Put the name of the language after the backticks in the code block:
+Minidi supports [GFM][gfm] like syntax highlighting. Put the name of the language after the backticks in the code block:
 
     ```javascript
     var hello = function () {

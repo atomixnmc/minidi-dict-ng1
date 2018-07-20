@@ -1,10 +1,10 @@
-MDwiki Entity Contributor License Agreement (CLA)
+Minidi Entity Contributor License Agreement (CLA)
 =====
 
 _(the following text is an unmodified CLA template created by the [Harmony Project](http://www.harmonyagreements.org/) at <http://www.harmonyagreements.org/> using the Harmony Selector)_
 
 - - - -
-Thank you for your interest in contributing to MDwiki ("We" or "Us").
+Thank you for your interest in contributing to Minidi ("We" or "Us").
 This contributor agreement ("Agreement") documents the rights granted by contributors to Us. To make this document effective, please sign it and send it to Us by electronic submission, following the instructions at mdwiki.info. This is a legally binding document, so please read it carefully before agreeing to it. The Agreement may cover more than one software project managed by Us.
 
 ## 1. Definitions

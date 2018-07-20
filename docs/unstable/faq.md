@@ -2,7 +2,7 @@ FAQ
 ====
 
   * ### Q: Can I open `mdwiki.html` in my browser from the menu or by specifying via a `file://` URL?
-  * A: Yes, at least for most browsers. There are some gimmicks that won't work on some browsers. List of browser that support opening MDwiki via `file://` urls:
+  * A: Yes, at least for most browsers. There are some gimmicks that won't work on some browsers. List of browser that support opening Minidi via `file://` urls:
 
     * Firefox (v23): Works good, no issues known.
     * Internet Explorer (v10): Works good, no issues known.
@@ -18,7 +18,7 @@ Gimmicks that won't work when using `file://` urls:
 
 - - - - - - - - -
 
-  * ### Q: I don't want to install nginx or apache locally. What is the fastest/easiest way to setup a local HTTP server to get started with MDwiki ?
+  * ### Q: I don't want to install nginx or apache locally. What is the fastest/easiest way to setup a local HTTP server to get started with Minidi ?
   * A: If you are on OS X or Linux, just use the `SimpleHTTPServer` that comes with python. To start a server on port 8080, run this command from within the folder where your `mdwiki.html` is located:
 
   ```bash
@@ -35,8 +35,8 @@ Gimmicks that won't work when using `file://` urls:
 
 - - - - - - - - -
 
-  * ### Q: Can sites generated from MDwiki be crawled and indexed by search engines like Google?
-  *  A: Yes, with some additional work. There is no user-friendly, easy solution yet, but we are working on it. Take for example [www.notesync.org] which is running MDwiki and fully indexed by google. We are still evaluating best solutions to make the same techniques easily accesible for everyone.
+  * ### Q: Can sites generated from Minidi be crawled and indexed by search engines like Google?
+  *  A: Yes, with some additional work. There is no user-friendly, easy solution yet, but we are working on it. Take for example [www.notesync.org] which is running Minidi and fully indexed by google. We are still evaluating best solutions to make the same techniques easily accesible for everyone.
 
   [issues]: https://github.com/Dynalon/mdwiki/issues
   [www.notesync.org]: http://www.notesync.org/

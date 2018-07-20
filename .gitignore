@@ -36,6 +36,7 @@ _site/
 *.swp
 logs/
 build/
+CNAME
 
 # Sublime editor
 # ==============

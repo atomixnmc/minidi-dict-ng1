@@ -4,7 +4,7 @@ Use with Dropbox
 About
 -----
 
-This tutorial describe how to maintain a copy of MDwiki with [Dropbox](http://www.dropbox.com)
+This tutorial describe how to maintain a copy of Minidi with [Dropbox](http://www.dropbox.com)
 
 Attention: This tutorial is incomplete. Please help completing it for beginner users by [contributing][contribute].
 

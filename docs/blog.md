@@ -1,5 +1,5 @@
-MDwiki Blog
+Minidi Blog
 ====
 
-[gimmick:iframe](http://dynalon.tumblr.com/tagged/MDwiki)
+[gimmick:iframe](http://dynalon.tumblr.com/tagged/Minidi)
 

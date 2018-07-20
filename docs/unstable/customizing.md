@@ -22,7 +22,7 @@ To apply the theme globally for all files, put the entry into `navigation.md`. Y
 
     [gimmick:theme (inverse: true)](flatly)
 
-Note: Only the default `bootstrap` theme is bundled with MDwiki and available offline. All other themes require internet connection, as the styles are dynamically loaded on demand.
+Note: Only the default `bootstrap` theme is bundled with Minidi and available offline. All other themes require internet connection, as the styles are dynamically loaded on demand.
 
 Configuration
 -------------
@@ -53,7 +53,7 @@ A sample `config.json` might thus look like this:
 }
 ```
 
-Note: More configuration options will be available in future versions of MDwiki.
+Note: More configuration options will be available in future versions of Minidi.
 
 Hint: It is adviced that you create an empty config.json in each cases, to avoid 404 errors which will not get cached by your browser. Having an `config.json` file present thus will speed up page loading (even if its empty).
 

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <!--
-   This is MDwiki v0.7.0
+   This is Minidi v0.7.0
    (C) 2013 by Timo Dörr and contributors. This software is licensed
    under the terms of the GNU GPLv3 with additional terms applied.
    See https://github.com/Dynalon/mdwiki/blob/master/LICENSE.txt for more detail.
    See http://github.com/Dynalon/mdwiki for a copy of the source code.
 -->
 <head>
-    <title>MDwiki</title>
+    <title>Minidi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="fragment" content="!">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <meta charset="UTF-8">
 
-<script type="text/javascript">window.MDwikiEnableDebug = true;</script><!-- START tmp/main.css -->
+<script type="text/javascript">window.MinidiEnableDebug = true;</script><!-- START tmp/main.css -->
 <style id="style:tmp/main.css">/* 
  * Main stylesheet file
  */
 /* 
- * MDwiki base CSS file
+ * Minidi base CSS file
  * DON'T TOUCH UNLESS YOU KNOW WHAT ARE YOU DOING 
  */
 /* hide the main content while we assemble everything */
@@ -14376,7 +14376,7 @@ Prism.hooks.add("after-highlight",function(e){var t=e.element.parentNode;if(!t||
 
 }(jQuery, document, this));</script>
 <!-- END extlib/js/jquery.colorbox.js -->
-<!-- START tmp/MDwiki.js -->
+<!-- START tmp/Minidi.js -->
 <script type="text/javascript">;(function() {
 
 /**
@@ -15543,8 +15543,8 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-var MDwiki;
-(function (MDwiki) {
+var Minidi;
+(function (Minidi) {
     (function (Core) {
         var ScriptResource = (function () {
             function ScriptResource(url, loadstage, finishstage) {
@@ -15764,11 +15764,11 @@ var MDwiki;
             return GimmickLoader;
         })();
         Core.GimmickLoader = GimmickLoader;
-    })(MDwiki.Core || (MDwiki.Core = {}));
-    var Core = MDwiki.Core;
-})(MDwiki || (MDwiki = {}));
-var MDwiki;
-(function (MDwiki) {
+    })(Minidi.Core || (Minidi.Core = {}));
+    var Core = Minidi.Core;
+})(Minidi || (Minidi = {}));
+var Minidi;
+(function (Minidi) {
     (function (Util) {
         (function (LogLevel) {
             LogLevel[LogLevel["TRACE"] = 0] = "TRACE";
@@ -15814,22 +15814,22 @@ var MDwiki;
             return Logger;
         })();
         Util.Logger = Logger;
-    })(MDwiki.Util || (MDwiki.Util = {}));
-    var Util = MDwiki.Util;
-})(MDwiki || (MDwiki = {}));
+    })(Minidi.Util || (Minidi.Util = {}));
+    var Util = Minidi.Util;
+})(Minidi || (Minidi = {}));
 (function ($) {
     var logger;
-    if (typeof (MDwikiEnableDebug) != "undefined")
-        logger = new MDwiki.Util.Logger(1 /* DEBUG */);
+    if (typeof (MinidiEnableDebug) != "undefined")
+        logger = new Minidi.Util.Logger(1 /* DEBUG */);
     else
-        logger = new MDwiki.Util.Logger(4 /* ERROR */);
+        logger = new Minidi.Util.Logger(4 /* ERROR */);
 
     $.md.getLogger = function () {
         return logger;
     };
 
-    $.initMDwiki = function (name) {
-        $.md.wiki = new MDwiki.Core.Wiki();
+    $.initMinidi = function (name) {
+        $.md.wiki = new Minidi.Core.Wiki();
         $.md.stage = function (name) {
             return $.md.wiki.stages.getStage(name);
         };
@@ -15877,8 +15877,8 @@ var Navbar = (function () {
     };
     return Navbar;
 })();
-var MDwiki;
-(function (MDwiki) {
+var Minidi;
+(function (Minidi) {
     (function (Core) {
         var Resource = (function () {
             function Resource(url, dataType) {
@@ -15979,11 +15979,11 @@ var MDwiki;
             return Stage;
         })();
         Core.Stage = Stage;
-    })(MDwiki.Core || (MDwiki.Core = {}));
-    var Core = MDwiki.Core;
-})(MDwiki || (MDwiki = {}));
-var MDwiki;
-(function (MDwiki) {
+    })(Minidi.Core || (Minidi.Core = {}));
+    var Core = Minidi.Core;
+})(Minidi || (Minidi = {}));
+var Minidi;
+(function (Minidi) {
     (function (Core) {
         var StringUtil = (function () {
             function StringUtil() {
@@ -16168,14 +16168,14 @@ var MDwiki;
                 $this.replaceWith($chooser);
             });
         };
-    })(MDwiki.Core || (MDwiki.Core = {}));
-    var Core = MDwiki.Core;
-})(MDwiki || (MDwiki = {}));
+    })(Minidi.Core || (Minidi.Core = {}));
+    var Core = Minidi.Core;
+})(Minidi || (Minidi = {}));
 
-var Logger = MDwiki.Util.Logger;
+var Logger = Minidi.Util.Logger;
 
-var MDwiki;
-(function (MDwiki) {
+var Minidi;
+(function (Minidi) {
     (function (Core) {
         var Wiki = (function () {
             function Wiki() {
@@ -16343,9 +16343,9 @@ var MDwiki;
             return Wiki;
         })();
         Core.Wiki = Wiki;
-    })(MDwiki.Core || (MDwiki.Core = {}));
-    var Core = MDwiki.Core;
-})(MDwiki || (MDwiki = {}));
+    })(Minidi.Core || (Minidi.Core = {}));
+    var Core = Minidi.Core;
+})(Minidi || (Minidi = {}));
 
 (function($) {
     'use strict';
@@ -16455,7 +16455,7 @@ var MDwiki;
             window.location.hash = newHashString;
     }
 
-    $.initMDwiki();
+    $.initMinidi();
 
     $(document).ready(function () {
 
@@ -17377,7 +17377,7 @@ var MDwiki;
         navbar += '<hr><div class="scontainer">';
         navbar +=   '<div class="pull-right md-copyright-footer"> ';
         navbar +=     '<span id="md-footer-additional"></span>';
-        navbar +=     'Website generated with <a href="http://www.mdwiki.info">MDwiki</a> ';
+        navbar +=     'Website generated with <a href="http://www.mdwiki.info">Minidi</a> ';
         navbar +=     '&copy; Timo D&ouml;rr and contributors. ';
         navbar +=   '</div>';
         navbar += '</div>';
@@ -17397,7 +17397,7 @@ var MDwiki;
 
 (function($) {
     //'use strict';
-    var alertsModule = new MDwiki.Core.Module();
+    var alertsModule = new Minidi.Core.Module();
     alertsModule.init = function() {
         $.md.stage('bootstrap').subscribe(function(done) {
             createAlerts();
@@ -17466,7 +17466,7 @@ var MDwiki;
 (function($) {
     // makes trouble, find out why
     //'use strict';
-    var colorboxModule = new MDwiki.Core.Module();
+    var colorboxModule = new Minidi.Core.Module();
     colorboxModule.init = function() {
         $.md.stage('gimmick').subscribe(function(done) {
             make_colorbox();
@@ -17569,7 +17569,7 @@ var MDwiki;
         });
     }
 
-    var disqusGimmick = new MDwiki.Core.Gimmick();
+    var disqusGimmick = new Minidi.Core.Gimmick();
     disqusGimmick.addHandler('disqus', disqus);
     $.md.wiki.gimmicks.registerGimmick(disqusGimmick);
 }(jQuery));
@@ -17589,7 +17589,7 @@ var MDwiki;
                 .prepend('<i class="glyphicon glyphicon-pencil"></i> ');
         });
     }
-    var editMeGimmick = new MDwiki.Core.Gimmick();
+    var editMeGimmick = new Minidi.Core.Gimmick();
     editMeGimmick.addHandler('editme', editMe);
     $.md.wiki.gimmicks.registerGimmick(editMeGimmick);
 }(jQuery));
@@ -17631,11 +17631,11 @@ var MDwiki;
         });
     }
 
-    var facebookLikeGimmick = new MDwiki.Core.Gimmick();
+    var facebookLikeGimmick = new Minidi.Core.Gimmick();
     facebookLikeGimmick.addHandler('facebooklike', facebooklike);
     facebookLikeGimmick.init = function () {
         // license: 'APACHE2',
-        var the_script = new MDwiki.Core.ScriptResource(fbscript, 'postgimmick', 'all_ready');
+        var the_script = new Minidi.Core.ScriptResource(fbscript, 'postgimmick', 'all_ready');
         this.registerScriptResource(the_script);
     };
     $.md.wiki.gimmicks.registerGimmick(facebookLikeGimmick);
@@ -17690,7 +17690,7 @@ var MDwiki;
         });
     }
 
-    var gimmick = new MDwiki.Core.Gimmick();
+    var gimmick = new Minidi.Core.Gimmick();
     gimmick.addHandler('forkmeongithub', forkmeongithub);
     $.md.wiki.gimmicks.registerGimmick(gimmick);
 
@@ -17712,7 +17712,7 @@ var MDwiki;
         });
     }
 
-    var gistGimmick = new MDwiki.Core.Gimmick();
+    var gistGimmick = new Minidi.Core.Gimmick();
     gistGimmick.addHandler('gist', gist);
     $.md.wiki.gimmicks.registerGimmick(gistGimmick);
 }(jQuery));
@@ -17975,13 +17975,13 @@ function googlemapsReady() {
         });
     }
 
-    var googleMapsGimmick = new MDwiki.Core.Gimmick();
+    var googleMapsGimmick = new Minidi.Core.Gimmick();
     googleMapsGimmick.init = function() {
         googlemapsLoadDone = $.Deferred();
 
         // googleMapsGimmick.subscribeGimmick('googlemaps', googlemaps);
         // load the googlemaps js from the google server
-        var script = new MDwiki.Core.ScriptResource (scripturl, 'skel_ready', 'bootstrap');
+        var script = new Minidi.Core.ScriptResource (scripturl, 'skel_ready', 'bootstrap');
         googleMapsGimmick.registerScriptResource(script);
 
         $.md.stage('bootstrap').subscribe(function(done) {
@@ -18030,7 +18030,7 @@ function googlemapsReady() {
         });
     }
 
-    var iframeGimmick = new MDwiki.Core.Gimmick();
+    var iframeGimmick = new Minidi.Core.Gimmick();
     iframeGimmick.addHandler('iframe', create_iframe);
     $.md.wiki.gimmicks.registerGimmick(iframeGimmick);
 }(jQuery));
@@ -18074,7 +18074,7 @@ function googlemapsReady() {
         Prism.highlightAll();
     }
 
-    var prismGimmick = new MDwiki.Core.Module();
+    var prismGimmick = new Minidi.Core.Module();
     prismGimmick.init = function() {
         $.md.stage('gimmick').subscribe(function(done) {
             prism_highlight();
@@ -18101,7 +18101,7 @@ function googlemapsReady() {
         script.src = url;
         document.getElementsByTagName('head')[0].appendChild(script);
     }
-    var mathGimmick = new MDwiki.Core.Module();
+    var mathGimmick = new Minidi.Core.Module();
     mathGimmick.init = function() {
         $.md.stage('pregimmick').subscribe(function(done) {
             var $math_sections = $('.lang-math');
@@ -18153,10 +18153,10 @@ function googlemapsReady() {
     var widgetHref = $.md.prepareLink('platform.twitter.com/widgets.js');
     var twitterscript = '!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="' + widgetHref + '";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");';
 
-    var twitterGimmick = new MDwiki.Core.Gimmick();
+    var twitterGimmick = new Minidi.Core.Gimmick();
     twitterGimmick.addHandler('twitterfollow', twitterfollow);
     twitterGimmick.init = function() {
-        var script = new MDwiki.Core.ScriptResource();
+        var script = new Minidi.Core.ScriptResource();
         script.url = twitterscript;
         script.loadstage = 'postgimmick';
         script.finishstage = 'all_ready';
@@ -18192,7 +18192,7 @@ function googlemapsReady() {
             }
         });
     }
-    var youtubeGimmick = new MDwiki.Core.Module();
+    var youtubeGimmick = new Minidi.Core.Module();
     youtubeGimmick.init = function () {
         $.md.stage('gimmick').subscribe(function(done) {
             youtubeLinkToIframe();
@@ -18203,7 +18203,7 @@ function googlemapsReady() {
 
 }(jQuery));
 </script>
-<!-- END tmp/MDwiki.js -->
+<!-- END tmp/Minidi.js -->
 
 </head>
 <body>
