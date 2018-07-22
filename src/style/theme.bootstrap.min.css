@@ -6070,6 +6070,12 @@ legend {
 }
 
 /* EXTRA */
+.margin-5em {
+  margin-right: .5rem!important;
+}
+.margin-10em {
+  margin-right: 1.0rem!important;
+}
 .header-margin {
   margin-top: 80px;
 }

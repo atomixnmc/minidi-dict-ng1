@@ -70,12 +70,13 @@ class DiscussListCtrl {
 			this.topics.list = this.$scope.listData;
 		} else {
 			this.DiscussService.getTopicList(this.topicOptions)
-			.then(data => {
-				this.topics.list = data;
+			.then(response => {
+				console.log(response.data);
+				this.topics.list = response.data.topics;
 			});
 		}
 
-		console.log(this);
+		// console.log(this);
 	}
 }
 

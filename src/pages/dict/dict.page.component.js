@@ -5,11 +5,12 @@ class DictPageCtrl {
 		this.DictService = DictService;
 		this.$scope = $scope;
         this.$scope.currentWord = "";
+        this.load();
 	    this.start();
 	}
 
     load() {
-        this.getWordList();
+        // this.getWordList();
         this.getDicts();
     }
 
@@ -27,15 +28,17 @@ class DictPageCtrl {
 
     getDicts(){
         this.DictService.getDictList()
-        .done((data)=>{
+        .then((response)=>{
+            var data = response.data;
             this.$scope.dicts = data;
-            this.$scope.currentDict = this.$scope.dicts[0];
+            this.$scope.currentDict = data[0];
         });
     }
 
     getWordList() {
         this.DictService.getWordList()
-        .done((data)=>{
+        .then((response)=>{
+            var data = response.data;
             // console.log(data);
             this.displayWordList(data);
         });
@@ -47,7 +50,8 @@ class DictPageCtrl {
 
     findWord(word) {
         this.DictService.findWord(word, this.$scope.currentDict.name)
-        .done((data)=>{
+        .then((response)=>{
+            var data = response.data;
             // console.log(data);
             this.displayWordResult(data);
         });

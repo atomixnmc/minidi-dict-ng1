@@ -1,6 +1,20 @@
 import angular from 'angular'
 import uirouter from '@uirouter/angularjs'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css/animate.min.css';
+import css from '../style/theme.bootstrap.min.css';
+import 'angular-loading-bar/build/loading-bar.min.css';
+
 require('angular-ui-bootstrap');
+require('angular-sanitize');
+require('angular-aria');
+require('angular-messages');
+require('angular-resource');
+require('angular-animate');
+require('angular-loading-bar');
+require('bootstrap-sweetalert');
+require('angular-ui-notification');
 
 import config from './app.config'
 import routes from './app.routes'
@@ -69,7 +83,7 @@ window.ApplicationConfiguration = config;
 // console.log(config);
 
 angular.module(config.applicationModuleName, [
-        uirouter, "ui.bootstrap",
+        'ngResource', 'ngAnimate', 'ngMessages', 'ngSanitize', 'ui.router', 'ui.bootstrap', 'ui-notification',
         shared, front, home, dict, help, intro, study, discuss
     ])
     .config(bootstrapConfig)

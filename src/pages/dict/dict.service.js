@@ -5,23 +5,25 @@ export default class DictService {
     }
     
     getDictList() {
-        return $.ajax({
+        return this.$http({
+            method: "GET",
             url: this.URLService.getApiServiceUrl("/api/dict/list"),
-            context: document.body
+            // context: document.body
         });
     }
     getWordList() {
-    	return $.ajax({
+    	return this.$http({
+            method: "GET",
             url: this.URLService.getApiServiceUrl("/api/word/list"),
-            context: document.body
+            // context: document.body
         });
     }
     findWord(word, dict) {
-        return $.ajax({
+        return this.$http({
             method: "GET",
             url: this.URLService.getApiServiceUrl("/api/word/find"),
-            context: document.body,
-            data: {
+            // context: document.body,
+            params: {
                 word: word,
                 dict: dict
             },

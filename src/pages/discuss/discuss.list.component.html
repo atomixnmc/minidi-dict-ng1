@@ -1,9 +1,7 @@
 <div>
 	<div class="row">
 		<div class="col-md-12">
-			<ul class="nav nav-pills nav-justified">
-				<li ng-repeat="topicClass in vm.topics.classes">{{topicClass.title}}</li>
-			</ul>
+			<span class="btn btn-default" ng-repeat="topicClass in vm.topics.classes">{{topicClass.title}}</span>
 		</div>
 	</div>
 	<div class="row">
@@ -14,22 +12,37 @@
 	<h3><span ng-if="vm.topicOptions.featured == true">HOT</span></h3>
 	<div class="data-list">
 	    <div class="row" ng-repeat="topic in vm.topics.list" ng-class="{'odd': $index % 2 == 1, 'even': $index % 2 == 0}" >
-	    	<div>
-		    	<div class="col-md-12">{{topic.owner}} - {{topic.createTime}}</div>
+	    	<div class="col-md-1">
+	    		<img src="http://via.placeholder.com/50x50" alt="" class="img-circle" style="margin-top: 10px">
 	    	</div>
-	    	<div>
-		    	<div class="col-md-6">{{topic.title}}</div>
-		    	<div class="col-md-6">
-		    		<ul>
-		    			<li ng-repeat="cat in topic.categories">{{cat}}</li>
-		    		</ul>
+
+	    	<div class="col-md-11">
+	    		<div>
+			    	<div class="col-md-12">
+			    	<a ui-sref="user.profile.view({ id: topic.owner })" class="small">{{topic.owner}} </a>
+			    	<span class="small">{{topic.createTime}}</span></div>
+		    	</div>
+		    	<div>
+			    	<div class="col-md-6">
+			    		<a ui-sref="front.discuss.topic.view({ id: topic.id })" class="lead">{{topic.title}}</a>
+			    		
+			    	</div>
+			    	<div class="col-md-6">
+			    		<span class="col-md-6" class="text-right"><a class="label label-default margin-5em" ng-repeat="cat in topic.categories">{{cat}}</a></span>
+			    		<!-- <ul>
+			    			<li ng-repeat="cat in topic.categories">{{cat}}</li>
+			    		</ul> -->
+			    	</div>
+		    	</div>
+		    	<div>
+			    	<div class="col-md-12" style="color: #999999">
+			    		<span class="text small margin-10em"><i class="glyphicon glyphicon-eye-open"></i>{{topic.stats.view}}</span> 
+			    		<span class="text small margin-10em"><i class="glyphicon glyphicon-eye-open"></i>{{topic.stats.view}}</span> 
+			    		<span class="text small margin-10em"><i class="glyphicon glyphicon-eye-open"></i>{{topic.stats.view}}</span>
+			    	</div>
 		    	</div>
 	    	</div>
-	    	<div>
-		    	<div class="col-md-12">
-		    		<span><i class="glyphicon glyphicon-eye-open"></i>{{topic.stats.view}}</span>
-		    	</div>
-	    	</div>
+	    	
 	    </div>
     </div>
     <ul 

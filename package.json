@@ -9,7 +9,7 @@
   "scripts": {
     "start": "gulp copy-static && webpack-serve ./webpack.config.js",
     "build": "webpack",
-    "build:prod": "webpack --env.NODE_ENV=production"
+    "build:prod": "gulp copy-static && webpack --env.NODE_ENV=production"
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.18",
