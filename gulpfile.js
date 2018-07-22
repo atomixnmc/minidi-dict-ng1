@@ -20,6 +20,7 @@ gulp.task('deploy:prod', function(done) {
   runSequence(
     'env:prod',
     [
+      'copy-static',
       'webpack'
     ],
     [
@@ -31,6 +32,11 @@ gulp.task('webpack', function() {
   return gulp.src('src/app/app.js')
     .pipe(gulpWebpack(require('./webpack.config.js'), webpack))
     .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('copy-static', function() {
+  return gulp.src('src/public/**/*')
+    .pipe(gulp.dest('dist/public'));
 });
 
 gulp.task('deploy', [], function () {

@@ -24,6 +24,10 @@ var config = {
                 loader: ['style-loader', 'css-loader']
             },
             {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader'
+            },
+            {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [{
                     loader: 'file-loader',
@@ -47,7 +51,7 @@ var config = {
 config.serve = {
     content: path.join(__dirname, 'dist'),
     host: 'localhost',
-    port: 4001,
+    port: 4001
 };
 
 // config.devServer= {
@@ -64,7 +68,7 @@ config.serve = {
 // };
 
 module.exports = function (env) {
-    var curEnv = env ? env.NODE_ENV : 'development';
+    var curEnv = (env ? env.NODE_ENV : 'development') || 'development';
     console.log('Webpack mode: ', curEnv);
 
     config.resolve = {

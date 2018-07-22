@@ -1,70 +1,146 @@
-<div id='tab-intro'>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-2 col-xxs-hidden">
-                <h3>
-            Hướng dẫn
-          </h3>
-            </div>
-            <div class="col-xs-8">
-                <div class="input-group">
-                    <div class="input-group-btn search-panel">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            <span id="search_concept">Chủ đề</span> <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#en_vi">Cách sử dụng</a></li>
-                        </ul>
-                    </div>
-                    <input type="text" class="form-control" id="search-word" placeholder="Nhập từ...">
-                    <span class="input-group-btn">
-                    <button id="btn-search" class="btn btn-default" type="button">
-                      <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-xxs-hidden" style="height:500px;">
-                <div style="height: 100%; overflow: scroll">
-                    <ul id="word-list" class="word-list" style="display: none">
-                        <li>A</li>
-                        <li>B</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-10" id="result-cont">
-                <div class="panel-group" style="border: none" id="result-notfound-panel">
-                    <p>
-                        <h5>
-                  Mời bạn nhập từ cần tìm. <i>Không có từ này!</i>
-              </h5>
-                    </p>
-                </div>
-                <div class="panel-group" style="border: none" id="result-found-panel">
-                    <div class="panel panel-default" style="border: none">
-                        <div style="border-top: 1px solid grey; border-bottom: 1px solid grey">
-                            <h4 class="panel-title" style="height: 60px; line-height: 60px; ">
-                             <div data-toggle="collapse" id="result-word" style="width: 50%; float: left">
-                            </div> 
-                            <div id="pronunciation" style="width: 50%; float: right">
-                              <i class="glyphicon glyphicon-volume-up" id="sound"></i>
-                              <span id="transcription" style="font-style: italic;"></span>
-                            </div>
-                        </h4>
-                            <!--<span class="glyphicon glyphicon-chevron-down"></span>-->
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                
-                            </div>
+<div class="container featured-box section scrollspy question-list" id="acc-guide" role="tablist" aria-multiselectable="true">
+    <h2>Hướng dẫn sử dụng</h2>
+    <div class="row faqs laban-dict" style="height:auto;">
+        <div class="col-md-12">
+            <ul >
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#guide-header-1" data-parent="#acc-guide" aria-expanded="false">Tra từ</div>
+                    <div id="guide-header-1" class="panel-collapse collapse">
+                        <div class="collapsible-inside"> Ở màn hình chính, bấm thanh tìm kiếm, và nhập từ cần tra. Có thể tra từ không cần mạng
+                            <br>
+                            <img src="/public/images/hdsd-dict-03-1.2.png" alt="Tra từ">
                         </div>
                     </div>
-                </div>
-            </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#guide-header-2" data-parent="#acc-guide" aria-expanded="false">Từ điển Anh-Anh, Đồng nghĩa</div>
+                    <div  id="guide-header-2" class="panel-collapse collapse">
+                        <div class="collapsible-inside"> Để tra từ trong từ điển Anh-Anh và Đồng nghĩa, bạn phải tải bộ từ điển Anh-Anh xuống. Vào Menu ➙ Chọn từ điển ➙ Từ điển Anh-Anh
+                            <br>
+                            <img src="/public/images/hdsd-dict-01-1.2.png" alt="Từ điển Anh-Anh">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#guide-header-3" data-parent="#acc-guide" aria-expanded="false">Cửa sổ tra nhanh</div>
+                    <div  id="guide-header-3" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Cửa sổ "Tra nhanh" cho phép tra từ trong ứng dụng khác. Vào Menu ➙ Cửa sổ tra nhanh. Khi cửa sổ tra nhanh thu nhỏ, có hình dạng là kính lúp có thể di chuyển trong một ứng dụng khác.
+                            <br>
+                            <img src="/public/images/hdsd-dict-05-1.2.png" alt="Cửa sổ tra nhanh">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#guide-header-4" data-parent="#acc-guide" aria-expanded="false">Tra từ bằng camera, giọng nói</div>
+                    <div  id="guide-header-4" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Bấm vào kính lúp ➙ biểu tượng micro/camera
+                            <br>
+                            <img src="/public/images/hdsd-dict-12-1.2.png" alt="camera, giọng nói">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#guide-header-5" data-parent="#acc-guide" aria-expanded="false">Lịch sử</div>
+                    <div  id="guide-header-5" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Giúp tra cứu nhanh những từ vừa mới tra. Vào Menu ➙ Lịch sử
+                            <br>
+                            <img src="/public/images/hdsd-dict-06-1.2.png" alt="Lịch sử">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#guide-header-6" data-parent="#acc-guide" aria-expanded="false">Yêu thích</div>
+                    <div  id="guide-header-6" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Giúp lưu lại các từ khó nhớ cần học lại. Vào Menu ➙ Yêu thích
+                            <br>
+                            <img src="/public/images/hdsd-dict-07-1.2.png" alt="Yêu thích">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#guide-header-7" data-parent="#acc-guide" aria-expanded="false">Động từ bất quy tắc</div>
+                    <div  id="guide-header-7" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Vào Menu ➙ Động từ bất quy tắc
+                            <br>
+                            <img src="/public/images/hdsd-dict-08-1.2.png" alt="Động từ">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#guide-header-8" data-parent="#acc-guide" aria-expanded="false">Dịch câu</div>
+                    <div id="guide-header-8" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Vào Menu ➙ Dịch câu. Lưu ý: chức năng này cần phải có mạng internet.
+                            <br>
+                            <img src="/public/images/hdsd-dict-09-1.2.png" alt="Dịch câu">
+                        </div>
+                    </div>
+            </ul>
         </div>
     </div>
+</div>
+
+<div class="container featured-box section scrollspy question-list" id="acc-faq" >
+    <h2>Câu hỏi thường gặp</h2>
+    <div class="row faqs laban-dict" style="height:auto;">
+        <div class="col-md-12">
+            <ul>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#faq-header-1" data-parent="#acc-faq">Có thể tra từ offline không?</div>
+                    <div  id="faq-header-1" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Minidi Dictionary có thể tra từ mà không cần dùng mạng
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#faq-header-2" data-parent="#acc-faq">Làm sao phát âm khi offline?</div>
+                    <div  id="faq-header-2" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Để chức năng phát âm của Minidi Dictionary có thế hoạt động khi offline, bạn vui lòng tải Google Text-to-Speech trên Play Store
+                            <br>
+                            <img src="/public/images/hdsd-dict-10-1.2.png" alt="Google Text-to-Speech">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#faq-header-3" data-parent="#acc-faq">Làm sao chỉnh kích cỡ chữ?</div>
+                    <div  id="faq-header-3" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Vào Menu ➙ Tùy chỉnh ➙ Kích cỡ chữ
+                            <br>
+                            <img src="/public/images/hdsd-dict-11-1.2.png" alt="Kích cỡ chữ">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#faq-header-4" data-parent="#acc-faq">Có thể dịch câu offline không?</div>
+                    <div  id="faq-header-4" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Để dùng được chức năng dịch câu, bắt buộc phải có mạng internet
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div data-toggle="collapse" class="question-header"  data-target="#faq-header-5" data-parent="#acc-faq">Vì sao từ điển cần quyền micro/camera?</div>
+                    <div  id="faq-header-5" class="panel-collapse collapse">
+                        <div class="collapsible-inside">
+                            Minidi Dictionary có chức năng tra từ bằng giọng nói, camera, nên cần 2 quyền đó
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <h2><a href="https://atomixnmc.github.io/minidi-dict-ng1/#!index.md" target='_blank'>Hướng dẫn chỉnh sửa</a></h2>
 </div>

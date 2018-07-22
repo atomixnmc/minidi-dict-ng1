@@ -63,7 +63,7 @@ function stateControl($rootScope, $state) {
 }
 
 window.ApplicationConfiguration = config;
-console.log(config);
+// console.log(config);
 
 angular.module(config.applicationModuleName, [uirouter,
         shared, front, home, dict, help, intro

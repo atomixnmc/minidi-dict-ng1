@@ -1,0 +1,9 @@
+.collapsible-inside {
+	margin-left: 20px;
+	padding-left: 20px;
+	border-left: 1px solid #3355ff;
+}
+
+.question-list .question-header{
+	font-size: 1.2em;
+}

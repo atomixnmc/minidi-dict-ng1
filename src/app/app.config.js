@@ -19,7 +19,7 @@ cfg.$icms = {
     ui: {}
 };
 
-console.log(configEnv);
+// console.log(configEnv);
 cfg = lodash.extend(cfg, configEnv);
 
 export default cfg;

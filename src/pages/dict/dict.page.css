@@ -17,3 +17,40 @@ span.phrase{
 	padding-left: 10px;
 	background-color: #eeeeee;
 }
+
+/* ICONS */
+
+.dict-icons.icon-touch {
+    background: url(/public/images/icon-touch.png) no-repeat;
+    background-size: 36px 42px
+}
+
+.dict-icons.icon-design {
+    background: url(/public/images/icon-design.png) no-repeat;
+    background-size: 42px 42px
+}
+
+.dict-icons.icon-quick {
+    background: url(/public/images/icon-quick.png) no-repeat;
+    background-size: 42px 42px
+}
+
+.dict-icons.icon-dict {
+    background: url(/public/images/icon-dict.png) no-repeat;
+    background-size: 42px 42px
+}
+
+.dict-icons.icon-favorite {
+    background: url(/public/images/icon-favorite.png) no-repeat;
+    background-size: 42px 42px
+}
+
+.dict-icons.icon-camera {
+    background: url(/public/images/icon-camera.png) no-repeat;
+    background-size: 42px 42px
+}
+
+.dict-icons.icon-word {
+    background: url(/public/images/icon-word.png) no-repeat;
+    background-size: 42px 42px
+}

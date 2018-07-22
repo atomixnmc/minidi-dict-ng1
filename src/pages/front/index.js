@@ -1,6 +1,7 @@
 
 import bootstrap from 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css/animate.min.css';
 import css from '../../style/theme.bootstrap.min.css';
 
 import uirouter from '@uirouter/angularjs'
