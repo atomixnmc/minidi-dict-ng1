@@ -9,7 +9,8 @@ function HomePageCtrl($timeout){
 module.exports = {
   template: require('./home.page.component.html'),
   controller: HomePageCtrl,
-  bindings: {
-    stats: '='
-  }
+    controllerAs: 'vm',
+  // bindings: {
+  //   stats: '='
+  // }
 }

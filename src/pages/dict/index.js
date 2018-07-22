@@ -1,11 +1,11 @@
 
-import uirouter from '@uirouter/angularjs'
+// import uirouter from '@uirouter/angularjs'
 
 import routes from './dict.routes.js'
 import DictService from './dict.service.js'
 import DictPageComponent from './dict.page.component'
 
-export default angular.module('dict', [uirouter, 'shared'])
+export default angular.module('dict', ['ui.router', 'shared'])
   .config(routes)
   .component('dictpage', DictPageComponent)
   .service('DictService', DictService)

@@ -5,9 +5,13 @@ class DictPageCtrl {
 		this.DictService = DictService;
 		this.$scope = $scope;
         this.$scope.currentWord = "";
-        this.getDicts();
 	    this.start();
 	}
+
+    load() {
+        this.getWordList();
+        this.getDicts();
+    }
 
     displayWordList(data) {
         $('#word-list').html("");
@@ -156,9 +160,7 @@ class DictPageCtrl {
     }
 
 	start() {
-	    // console.log('Dict start!');
-	    this.getWordList();
-
+        // console.log('Dict start!');
 	    $('#result-found-panel').hide();
 	    $('#btn-search').click(() => {
 	        this.findWord(this.$scope.currentWord); // $("#search-word").val()

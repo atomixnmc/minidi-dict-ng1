@@ -6069,6 +6069,19 @@ legend {
   color: #333333;
 }
 
+/* EXTRA */
 .header-margin {
   margin-top: 80px;
+}
+
+.data-list {
+
+}
+.data-list .row{
+  margin-top: 5px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.data-list .row.odd{
+  background-color: #eeeeee;
 }

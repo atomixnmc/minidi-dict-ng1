@@ -1,0 +1,15 @@
+<div class="btn-group" role="group" aria-label="displayItemLayout">
+  <button type="button" class="btn btn-default btn-xs " ng-click="$ctrl.displayModel.layout.current = 'list'"><i class="glyphicon glyphicon-list" ></i></button>
+  <button type="button" class="btn btn-default btn-xs " ng-click="$ctrl.displayModel.layout.current = 'grid'"><i class="glyphicon glyphicon-th"></i></button>
+</div>
+-
+<select ng-options="order as order.title for order in $ctrl.displayModel.order.modes track by order.name" ng-model="$ctrl.displayModel.order.current" ng-change="$ctrl.listController.changeDisplay()">
+</select>
+<a ng-click="$ctrl.listController.changeDisplay()">
+	<i class="glyphicon" ng-class="{
+'glyphicon-sort-by-attributes': $ctrl.displayModel.order.dir == 'asc', 
+'glyphicon-sort-by-attributes-alt': $ctrl.displayModel.order.dir == 'desc'
+}"></i>
+</a>
+-
+<select ng-options="limitNum as limitNum for limitNum in $ctrl.paginationModel.limit.modes" ng-model="$ctrl.paginationModel.limit.current" ng-change="$ctrl.listController.changeDisplay()"></select>

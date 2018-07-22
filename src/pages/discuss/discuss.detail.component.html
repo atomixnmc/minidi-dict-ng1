@@ -1,0 +1,15 @@
+<div class="container">
+	<h2>Tiêu đề</h2>
+    <div class="row data-list-row" ng-repeat = "topic in vm.topics">
+    	<div>
+	    	<div class="col-md-6">{{topic.title}}</div>
+	    	<div class="col-md-2">{{topic.stats.view}}</div>
+	    	<div class="col-md-2">
+	    		<ul>
+	    			<li ng-repeat="cat in topic.categories">{{cat}}</li>
+	    		</ul>
+	    	</div>
+	    	<div class="col-md-2">{{topic.owner}} - {{topic.createTime}}</div>
+    	</div>
+    </div>
+</div>

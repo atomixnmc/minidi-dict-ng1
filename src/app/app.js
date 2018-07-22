@@ -1,5 +1,6 @@
 import angular from 'angular'
 import uirouter from '@uirouter/angularjs'
+require('angular-ui-bootstrap');
 
 import config from './app.config'
 import routes from './app.routes'
@@ -11,6 +12,8 @@ import home from '../pages/home'
 import dict from '../pages/dict'
 import help from '../pages/help'
 import intro from '../pages/intro'
+import study from '../pages/study'
+import discuss from '../pages/discuss'
 
 bootstrapConfig.$inject = ['$compileProvider', '$locationProvider', '$httpProvider', '$logProvider'];
 
@@ -65,8 +68,9 @@ function stateControl($rootScope, $state) {
 window.ApplicationConfiguration = config;
 // console.log(config);
 
-angular.module(config.applicationModuleName, [uirouter,
-        shared, front, home, dict, help, intro
+angular.module(config.applicationModuleName, [
+        uirouter, "ui.bootstrap",
+        shared, front, home, dict, help, intro, study, discuss
     ])
     .config(bootstrapConfig)
     .run(stateControl)

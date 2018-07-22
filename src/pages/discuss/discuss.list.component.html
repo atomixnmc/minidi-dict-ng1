@@ -1,0 +1,39 @@
+<div>
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="nav nav-pills nav-justified">
+				<li ng-repeat="topicClass in vm.topics.classes">{{topicClass.title}}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-offset-4 col-md-8" style="text-align: right">
+			<list-control pagination-model="vm.topics.pagination" display-model="vm.topics.display" list-controller="vm"></list-control>
+		</div>
+	</div>
+	<h3><span ng-if="vm.topicOptions.featured == true">HOT</span></h3>
+	<div class="data-list">
+	    <div class="row" ng-repeat="topic in vm.topics.list" ng-class="{'odd': $index % 2 == 1, 'even': $index % 2 == 0}" >
+	    	<div>
+		    	<div class="col-md-12">{{topic.owner}} - {{topic.createTime}}</div>
+	    	</div>
+	    	<div>
+		    	<div class="col-md-6">{{topic.title}}</div>
+		    	<div class="col-md-6">
+		    		<ul>
+		    			<li ng-repeat="cat in topic.categories">{{cat}}</li>
+		    		</ul>
+		    	</div>
+	    	</div>
+	    	<div>
+		    	<div class="col-md-12">
+		    		<span><i class="glyphicon glyphicon-eye-open"></i>{{topic.stats.view}}</span>
+		    	</div>
+	    	</div>
+	    </div>
+    </div>
+    <ul 
+    ng-init="pagination = vm.topics.pagination; listController=vm" 
+    class="pagination-sm" uib-pagination total-items="pagination.items.total" ng-model="pagination.page.current"  items-per-page="pagination.limit.current"
+    max-size="10" boundary-link-numbers="true" rotate="false" first-text="&laquo;" last-text="&raquo;" ng-change="listController.changePage()"></ul>
+</div>

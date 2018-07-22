@@ -7,6 +7,7 @@ export default function routes($stateProvider) {
   .state('front.dict', {
     url: '/dict',
     template: require('./dict.html'),
-    controller: DictController
+    controller: DictController,
+    controllerAs: 'vm'
   });
 }
