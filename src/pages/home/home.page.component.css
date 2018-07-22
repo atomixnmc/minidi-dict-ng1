@@ -138,140 +138,7 @@ ul.list-logo li {
     display: block;
     text-indent: -99999px
 }
-/*
-.laban-key .group-title {
-    padding-top: 23%
-}
 
-.laban-key h2 {
-    color: #59a4ff
-}
-
-.laban-key ul li {
-    background: url(/public/images/style-key.png) no-repeat;
-    background-size: 5px 10px
-}
-
-.laban-key .btn {
-    background-color: #59a4ff
-}
-
-.laban-sms h2 {
-    color: #3f52b1
-}
-
-.laban-sms ul li {
-    background: url(/public/images/style-sms.png) no-repeat;
-    background-size: 5px 10px
-}
-
-.laban-sms .btn {
-    background-color: #3f52b1
-}
-
-.laban-sms span {
-    position: absolute;
-    left: -17%;
-    top: 50%;
-    margin-top: -329px;
-    background: url(/public/images/device-sms.png) no-repeat;
-    width: 695px;
-    height: 658px
-} 
-.laban-phonekit .row .col.m7.on-mobile {
-    display: none
-}
-
-.laban-phonekit .group-title {
-    position: absolute;
-    bottom: 15%;
-    left: 0;
-    width: 42%!important
-}
-
-.laban-phonekit h2 {
-    color: #f80
-}
-
-.laban-phonekit ul li {
-    background: url(/public/images/style-phonekit.png) no-repeat;
-    background-size: 5px 10px
-}
-
-.laban-phonekit .btn {
-    background-color: #f80
-}
-
-.laban-phonekit span {
-    position: absolute;
-    right: 0;
-    top: -75px;
-    background: url(/public/images/device-phonekit.png) no-repeat;
-    width: 651px;
-    height: 774px
-}
-
- .group-title {
-    padding-top: 25%
-}
-
- h2 {
-    color: #0c7cea
-}
-
- ul li {
-    background: url(/public/images/style-dict.png) no-repeat;
-    background-size: 5px 10px
-}
-
- .btn {
-    background-color: #0c7cea
-}
-
- span.device01 {
-    position: absolute;
-    left: 0;
-    top: -75px;
-    background: url(/public/images/device-dict-01.png) no-repeat;
-    width: 585px;
-    height: 710px
-}
-
- span.device02 {
-    position: absolute;
-    left: 2%;
-    bottom: -330px;
-    background: url(/public/images/device-dict-02.png) no-repeat;
-    width: 585px;
-    height: 710px
-}
-
-.laban-toolbox .group-title {
-    padding-top: 20%
-}
-
-.laban-toolbox h2 {
-    color: #009dd2
-}
-
-.laban-toolbox ul li {
-    background: url(/public/images/style-toolbox.png) no-repeat;
-    background-size: 5px 10px
-}
-
-.laban-toolbox .btn {
-    background-color: #009dd2
-}
-
-.laban-toolbox span {
-    position: absolute;
-    right: 0;
-    bottom: -120px;
-    background: url(/public/images/device-toolbox.png) no-repeat;
-    width: 658px;
-    height: 746px
-}
-*/
 /*
 .contact .group-title {
     text-align: center;
@@ -341,8 +208,8 @@ ul.list-logo li {
 }
 
 .featured ul.featured-list li {
-    float: left;
-    width: 50%;
+    /*float: left;*/
+    /*width: 50%;*/
     min-height: 90px;
     margin-bottom: 15px;
     box-sizing: border-box;
@@ -358,177 +225,50 @@ ul.list-logo li {
 }
 
 
-/*.featured ul.featured-list li.icon-vni {
-    background: url(/public/images/icon-vni.png) no-repeat;
-    background-size: 44px 28px
-}*/
-
-
-/*.featured ul.featured-list li.icon-customthemes {
-    background: url(/public/images/icon-customthemes.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.icon-themes {
-    background: url(/public/images/icon-themes.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.icon-telex {
-    background: url(/public/images/icon-telex.png) no-repeat;
-    background-size: 44px 12px
-}*/
-
-
-/*.featured ul.featured-list li.icon-suggest {
-    background: url(/public/images/icon-suggest.png) no-repeat;
-    background-size: 38px 41px
-}*/
-
-
-/*.featured ul.featured-list li.icon-emoji {
-    background: url(/public/images/icon-emoji.png) no-repeat;
-    background-size: 42px 40px
-}*/
-
-.featured ul.featured-list li.icon-touch {
+.icon-touch {
     background: url(/public/images/icon-touch.png) no-repeat;
     background-size: 36px 42px
 }
 
-
-/*.featured ul.featured-list li.icon-key {
-    background: url(/public/images/icon-key.png) no-repeat;
-    background-size: 42px 28px
-}*/
-
-
-/*.featured ul.featured-list li.icon-keysize {
-    background: url(/public/images/icon-keysize.png) no-repeat;
-    background-size: 41px 38px
-}*/
-
-
-/*.featured ul.featured-list li.icon-block {
-    background: url(/public/images/icon-block.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.icon-rule {
-    background: url(/public/images/icon-rule.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-.featured ul.featured-list li.icon-design {
+.icon-design {
     background: url(/public/images/icon-design.png) no-repeat;
     background-size: 42px 42px
 }
 
-.featured ul.featured-list li.icon-quick {
+.icon-quick {
     background: url(/public/images/icon-quick.png) no-repeat;
     background-size: 42px 42px
 }
 
 
-/*.featured ul.featured-list li.icon-backup {
-    background: url(/public/images/icon-backup.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.icon-sim {
-    background: url(/public/images/icon-sim.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.icon-contact {
-    background: url(/public/images/icon-contact.png) no-repeat;
-    background-size: 42px 34px
-}*/
-
-
-/*.featured ul.featured-list li.icon-storage {
-    background: url(/public/images/icon-storage.png) no-repeat;
-    background-size: 42px 42px
-}
-*/
-
-.featured ul.featured-list li.icon-dict {
+.icon-dict {
     background: url(/public/images/icon-dict.png) no-repeat;
     background-size: 42px 42px
 }
 
-.featured ul.featured-list li.icon-favorite {
+.icon-favorite {
     background: url(/public/images/icon-favorite.png) no-repeat;
     background-size: 42px 42px
 }
 
-.featured ul.featured-list li.icon-camera {
+.icon-camera {
     background: url(/public/images/icon-camera.png) no-repeat;
     background-size: 42px 42px
 }
 
-.featured ul.featured-list li.icon-word {
+.icon-word {
     background: url(/public/images/icon-word.png) no-repeat;
     background-size: 42px 42px
 }
-
-
-/*.featured ul.featured-list li.icon-doc {
+.icon-doc {
     background: url(/public/images/icon-doc.png) no-repeat;
     background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.lbp-limited {
-    background: url(/public/images/lbp-limited.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.lbp-stat {
-    background: url(/public/images/lbp-stat.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.lbp-setting {
-    background: url(/public/images/lbp-setting.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.lbt-optimize {
-    background: url(/public/images/lbt-optimize.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.lbt-memory {
-    background: url(/public/images/lbt-memory.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.lbt-trash {
-    background: url(/public/images/lbt-trash.png) no-repeat;
-    background-size: 42px 42px
-}*/
-
-
-/*.featured ul.featured-list li.lbt-sercurity {
-    background: url(/public/images/lbt-sercurity.png) no-repeat;
-    background-size: 42px 42px
-}*/
+}
 
 .featured .featured-box {
     position: relative;
     min-height: 550px;
-    padding: 100px 0;
+    padding: 50px 0;
     -webkit-box-shadow: inset 0 5px 6px -7px rgba(0, 0, 0, .6);
     -moz-box-shadow: inset 0 5px 6px -7px rgba(0, 0, 0, .6);
     -ms-box-shadow: inset 0 5px 6px -7px rgba(0, 0, 0, .6);

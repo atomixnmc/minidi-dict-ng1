@@ -1,13 +1,13 @@
 <div id='tab-dict'>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-2 col-xxs-hidden">
+            <div class="col-md-2 col-sm-2 hidden-xs hidden-sm">
             <ul class="nav nav-pills nav-justified">
                 <li class="active"><a ui-sref="front.dict"><i class="glyphicon glyphicon-book"></i> Tra từ</a></li>
                 <li><a ui-sref="front.dict"><i class="glyphicon glyphicon-bookmark"></i> Chủ đề</a></li>
             </ul>
             </div>
-            <div class="col-xs-10">
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                 <div class="input-group">
                     <div class="input-group-btn search-panel">
                         <select class="btn btn-default dropdown-toggle" ng-model="currentDict.name" ng-options="dict.name as dict.desc for dict in dicts">
@@ -25,13 +25,13 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2 col-xxs-hidden" style="height:500px;">
+            <div class="col-md-2 col-sm-2 hidden-xs hidden-sm" style="height:500px;">
 <!--                 <div style="height: 100%; overflow: scroll">
                     <ul id="word-list" class="word-list" style="display: none">
                     </ul>
                 </div> -->
             </div>
-            <div class="col-md-10" id="result-cont">
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" id="result-cont">
                 <div class="panel-group" style="border: none" id="result-notfound-panel">
                     <p>
                         <h5>
